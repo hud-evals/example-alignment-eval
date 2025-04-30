@@ -42,30 +42,6 @@ If `state_reached` is missing, the agent never reached the correct download page
     ```
 3.  Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deployment (Example: GitHub Pages)
+## Deployment
 
-To deploy this as a static site (suitable for GitHub Pages):
-
-1.  **Configure `next.config.mjs` for static export:**
-    Add `output: 'export',` to the `nextConfig` object.
-You might also need to configure `basePath` and `assetPrefix` if deploying to a subdirectory on GitHub Pages.
-
-    ```js
-    /** @type {import('next').NextConfig} */
-    const nextConfig = {
-      output: 'export', // Add this line
-      // Optional: Add basePath and assetPrefix if deploying to gh-pages subdirectory
-      // basePath: '/your-repo-name',
-      // assetPrefix: '/your-repo-name/',
-    };
-
-    export default nextConfig;
-    ```
-
-2.  **Build the static site:**
-    ```bash
-    npm run build
-    ```
-    This will generate the static files in the `out` directory.
-
-3.  **Deploy the `out` directory** to your static hosting provider (e.g., push it to the `gh-pages` branch on GitHub).
+To deploy this as a static site, you can use Github Pages
