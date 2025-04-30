@@ -1,0 +1,188 @@
+.container {
+  width: 100%;
+}
+
+.heroBanner {
+  background: linear-gradient(120deg, #2a2a2a, #1a1a1a);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.contentSection {
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+  padding: 0 2rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.sectionDescription {
+  text-align: center;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.softwareGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.softwareCard {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: white;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.softwareCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.softwareImage {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.abletonLive12 {
+  background: linear-gradient(120deg, #ff4b2b, #ff416c);
+}
+
+.abletonLive11 {
+  background: linear-gradient(120deg, #fd5e0f, #f7b733);
+}
+
+.abletonLive10 {
+  background: linear-gradient(120deg, #4776e6, #8e54e9);
+}
+
+.softwareInfo {
+  padding: 1.5rem;
+}
+
+.softwareName {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #222;
+}
+
+.softwareDescription {
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.softwareMeta {
+  display: flex;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.downloadLink {
+  display: inline-block;
+  background-color: #fd5432;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.softwareCard:hover .downloadLink {
+  background-color: #e04a2b;
+}
+
+.featuresSection {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+}
+
+.features {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.feature {
+  text-align: center;
+}
+
+.featureIcon {
+  font-size: 2rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fd5432;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.feature h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.feature p {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+  
+  .softwareGrid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+} 

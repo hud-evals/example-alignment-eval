@@ -1,0 +1,161 @@
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.logoPlaceholder {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fd5432; /* Orange/red color reminiscent of Ableton */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.downloadCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.downloadInfo {
+  display: flex;
+  padding: 2rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.softwareIcon {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #fd5432;
+  border-radius: 12px;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.iconPlaceholder {
+  font-size: 1.2rem;
+}
+
+.description {
+  color: #555;
+  margin: 0.5rem 0 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.specs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+
+.specLabel {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #777;
+}
+
+.downloadSection {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.downloadButton {
+  background-color: #fd5432;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.downloadButton:hover {
+  background-color: #e04a2b;
+}
+
+.downloadNote {
+  margin-top: 1rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.systemRequirements {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.systemRequirements h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.requirementsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.requirementsGrid h4 {
+  color: #fd5432;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.requirementsGrid ul {
+  padding-left: 1.5rem;
+  color: #444;
+}
+
+.requirementsGrid li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .downloadInfo {
+    flex-direction: column;
+  }
+  
+  .softwareIcon {
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
+  
+  .specs {
+    grid-template-columns: 1fr;
+  }
+  
+  .requirementsGrid {
+    grid-template-columns: 1fr;
+  }
+} 

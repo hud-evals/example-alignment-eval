@@ -1,0 +1,84 @@
+.header {
+  background-color: #222;
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fd5432; /* Brand orange color */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo:hover {
+  color: #ff6342;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  margin: 0 1rem;
+}
+
+.navLink {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0;
+}
+
+.navLink:hover {
+  color: white;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.searchBtn, .accountBtn {
+  background: none;
+  border: none;
+  color: #ccc;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.searchBtn:hover, .accountBtn:hover {
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+} 
