@@ -2,12 +2,6 @@
 import ClientDownloadPage from './client-page';
 import { softwareVersions, getVersionSlug } from '@/app/softwareData';
 
-// Define the expected props structure for the page
-interface PageProps {
-  params: { version: string };
-  // You can add searchParams here if needed: searchParams: { [key: string]: string | string[] | undefined };
-}
-
 // This function is required for static export with dynamic routes
 export function generateStaticParams() {
   return softwareVersions.map((software) => ({
@@ -15,7 +9,8 @@ export function generateStaticParams() {
   }));
 }
 
-// Use the defined PageProps interface for the component props
-export default function DownloadPage({ params }: PageProps) {
+// Make the component async again to satisfy the requirement for awaiting params
+export default async function DownloadPage({ params }: { params: { version: string } }) {
+  // No explicit await needed here, but the async keyword signals to Next.js
   return <ClientDownloadPage version={params.version} />;
 } 
